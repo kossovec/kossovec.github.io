@@ -1,34 +1,51 @@
-.photo {
-    display: block;
-    margin: 0 auto;
-    background: #c3d3cc;
-    padding: 1px;
-}
-.indent{
-   margin-left: 6%;
-}
-.phone {
-    text-decoration: none;
-}
 @font-face {
     font-family: 'MyriadPro Regular';
     src: url('../fonts/MyriadPro-Regular.otf') format("opentype");
 }
-p {
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: "MyriadPro Regular";
 }
+
+.wrapper{
+    margin: 20px auto 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 60%;
+    background-color: #f4f5f4;
+}
+
+section {
+    border-bottom: 1px solid olive;
+    padding-bottom: 1em;
+}
+
+figure p {
+ text-align: center;
+}
+
+.photo {
+    border: 1px solid #c3d3cc;
+}
+
+.indent{
+   margin-left: 6%;
+}
+
+.phone {
+    text-decoration: none;
+}
+
 h1{
-    font-family: "MyriadPro Regular";
     font-size: 40px;
-    width: 100%;
     text-align: center;
 }
-h3{
-    font-family: "MyriadPro Regular";
-    width: 100%;
-    /*text-align: center;*/
-}
-body{
-    margin: 5% 25%;
-    background: #f4f5f4;
-}
+
+
