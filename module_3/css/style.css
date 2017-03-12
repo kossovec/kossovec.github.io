@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    height: 100%;
+    background-color: #f9f9f9;
+    font-family: "MyriadPro Regular";
+}
+
+.mainComponent {
+    background-color: white;
+    margin: 0 15%;
+    padding: 0px 40px;
+    box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+}
+
+.logo {
+    padding: 40px 0;
+}
+
+.headMenu {
+    list-style-type: none;
+    background-color: #545454;
+    overflow: hidden;
+}
+
+.menuElement {
+    float: left;
+    padding: 0 20px;
+    border-right: 1px solid #545454;
+    border-left: 1px solid #545454;
+}
+.menuElement a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 14.61px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.menuElement:hover {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background-color: #3b3b3b;
+}
+
+.bodyContainer {
+
+    padding-top: 30px;
+}
+
+.bodyContainer:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.leftMenu {
+    float: left;
+}
+
+.content {
+   width: 70%;
+   margin: 0 auto;
+    float: right;
+}
+
+figure p {
+    border: 1px solid #c8c8c8;
+    padding: 5% 0;
+    text-align: center;
+}
+
+figcaption {
+    color: #2c2c2c;
+    font-size: 13.3px;
+    padding: 5% 3%;
+}
+
+.sideMenu {
+    width: 110px;
+    padding: 10px 100px 10px 35px;
+    border: 1px solid #c8c8c8;
+    list-style-type: none;
+}
+
+.sideMenu a {
+    font-size: 13.33px;
+    color: #656363;
+    text-decoration: none;
+}
+.sideMenu:hover {
+    background-color: #f9f9f9;
+    padding: 10px 90px 10px 45px;
+}
+.sideMenu:hover a {
+    background-color: #f9f9f9;
+    color: #2c2c2c;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+.bottomMenu {
+    list-style-type: none;
+    background-color: #e1e1e1;
+    overflow: hidden;
+}
+
+.bottomMenu:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.bottomMenu p {
+    float: right;
+    font-size: 13.3px;
+    padding: 7px 30px;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.bottomMenuElement {
+    padding: 7px 50px;
+    float: left;
+    font-size: 13.3px;
+}
+
+.bottomMenuElement a {
+    color: #2c2c2c;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
