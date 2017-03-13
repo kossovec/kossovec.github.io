@@ -3,22 +3,29 @@
     padding: 0;
 }
 
-html body {
+html {
+    height: 100%;
+}
+
+body {
     height: 100%;
     background-color: #f9f9f9;
     font-family: "MyriadPro Regular";
 }
 
+.logo a img {
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
 .mainComponent {
     background-color: white;
-    margin: 0 15%;
-    padding: 0px 40px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 40px;
     box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
 }
 
-.logo {
-    padding: 40px 0;
-}
 
 .headMenu {
     list-style-type: none;
@@ -28,7 +35,6 @@ html body {
 
 .menuElement {
     float: left;
-    padding: 0 20px;
     border-right: 1px solid #545454;
     border-left: 1px solid #545454;
 }
@@ -38,18 +44,21 @@ html body {
     text-align: center;
     font-size: 14.61px;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-    padding: 12px 16px;
+    padding: 12px 50px;
     text-decoration: none;
 }
 
-.menuElement:hover {
+.menuElement:not(:first-child):hover {
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
     background-color: #3b3b3b;
 }
+.menuElement:first-child:hover {
+    border-right: 1px solid #838383;
+    background-color: #3b3b3b;
+}
 
 .bodyContainer {
-
     padding-top: 30px;
 }
 
@@ -59,14 +68,13 @@ html body {
     display: table;
 }
 
-.leftMenu {
-    float: left;
-}
-
 .content {
    width: 70%;
    margin: 0 auto;
     float: right;
+}
+figure p img {
+    max-width: 100%;
 }
 
 figure p {
@@ -80,26 +88,29 @@ figcaption {
     font-size: 13.3px;
     padding: 5% 3%;
 }
-
-.sideMenu {
-    width: 110px;
-    padding: 10px 100px 10px 35px;
+.leftMenu {
+    width: 27%;
+    box-sizing: border-box;
+    float: left;
     border: 1px solid #c8c8c8;
-    list-style-type: none;
 }
 
-.sideMenu a {
+.leftMenuElement:not(:last-child) {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.leftMenuElement a {
+    display: block;
+    padding: 10px 100px 10px 35px;
     font-size: 13.33px;
     color: #656363;
     text-decoration: none;
 }
-.sideMenu:hover {
-    background-color: #f9f9f9;
-    padding: 10px 90px 10px 45px;
-}
-.sideMenu:hover a {
+
+.leftMenuElement a:hover {
     background-color: #f9f9f9;
     color: #2c2c2c;
+    padding: 10px 90px 10px 45px;
 }
 
 footer {
@@ -126,13 +137,11 @@ footer {
     text-align: center;
 }
 
-.bottomMenuElement {
-    padding: 7px 50px;
-    float: left;
-    font-size: 13.3px;
-}
-
 .bottomMenuElement a {
     color: #2c2c2c;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    float: left;
+    display: block;
+    padding: 7px 50px;
+    font-size: 13.3px;
 }
